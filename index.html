@@ -12,8 +12,7 @@
                 <li><a href="#hero" title="Go to the Hero section">Hero</a></li>
                 <li><a href="#education" title="View my Education background">Education</a></li>
                 <li><a href="#projects" title="Explore my Projects">Projects</a></li>
-                <li><a href="#experience" title="Learn about my Work Experience">Experience</a></li>
-                <li><a href="#publications" title="Read my Publications">Publications</a></li>
+                <li><a href="#skills" title="Learn about my Skills">Skills</a></li>
                 <li><a href="#contact" title="Get in Touch">Contact</a></li>
             </ul>
         </nav>
@@ -21,7 +20,7 @@
         <main>
 
             <section id = "hero">
-                <img src="images/superman.jpg" alt="SuperMan" width=100%>
+                <img src="images/superman.png" alt="SuperMan" width=100%>
                 <h1>SuperMan</h1>
                 <p>Welcome to my personal web page!</p>
                 <p>Highly motivated and ethically driven individual with over 80 years of experience in global crisis management, public safety, and community leadership. Proven track record of delivering innovative solutions to complex problems while maintaining unwavering integrity. Skilled in investigative journalism, emergency response, and cross-cultural collaboration. Adept at balancing dual identities as both a dedicated reporter and a protector of humanity.</p>
@@ -30,29 +29,33 @@
             <section id="education">
                 <h2>Education</h2>
 
-                <section>
-                    <h3>Bachelor of Arts in Journalism</h3>
-                    <div>
-                        <span>Metropolis University , Metropolis, USA</span>
-                        <span>-</span>
-                        <span>May 1945</span>
-                    </div>
-                    <ul>
-                        <li>Specialized in Investigative Reporting and Ethics in Media</li>
-                        <li>Recipient of the "Outstanding Student Journalist" Award</li>
-                    </ul>
-                </section>
+                <div class = "education-list">
+                    <section class = "education-item">
+                        <h3>Bachelor of Arts in Journalism</h3>
+                        <div>
+                            <span>Metropolis University , Metropolis, USA</span>
+                            <span>-</span>
+                            <span>May 1945</span>
+                        </div>
+                        <ul>
+                            <li>Specialized in Investigative Reporting and Ethics in Media</li>
+                            <li>Recipient of the "Outstanding Student Journalist" Award</li>
+                        </ul>
+                    </section>
+    
+                    <section class="education-item">
+                        <h3>Advanced Studies in Physics and Astrophysics</h3>
+                        <div>
+                            <span>Kryptonian Archives via Fortress of Solitude , Arctic Region</span>
+                        </div>
+                        <ul>
+                            <li>Ongoing Research: Alien Technology, Space-Time Dynamics, and Energy Manipulation</li>                        </li>
+                        </ul>
+    
+                    </section>
+                </div>
 
-                <section>
-                    <h3>Advanced Studies in Physics and Astrophysics</h3>
-                    <div>
-                        <span>Kryptonian Archives via Fortress of Solitude , Arctic Region</span>
-                    </div>
-                    <ul>
-                        <li>Ongoing Research: Alien Technology, Space-Time Dynamics, and Energy Manipulation</li>                        </li>
-                    </ul>
 
-                </section>
 
             </section>
 
@@ -70,10 +73,10 @@
                     </tr>
                     <tr class = "project picture">
                         <td>
-                            <img src="images/kryptonium-powered-energy.png" alt="Kryptonium-Powered Energy Grid Initiative" width=90%>
+                            <img src="images/kryptonium-powered-energy.png" alt="Kryptonium-Powered Energy Grid Initiative" width=75%>
                         </td>
                         <td>
-                            <img src="images/fortress-of-solitude.png" alt="Fortress of Solitude" width=90%>
+                            <img src="images/fortress-of-solitude.png" alt="Fortress of Solitude" width=75%>
                         </td>
                     </tr>
                     <tr class = "project description">
@@ -85,22 +88,66 @@
                         </td>
                     </tr>
                 </table>
-            
             </section>
 
-            <section id="experience">
-                <h2>Experience</h2>
+            <section id="skills">
+                <h2>My Skills</h2>
+
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <h3>Super Strength</h3>
+                        <p>Capable of lifting mountains and stopping natural disasters.</p>
+                    </li>
+                    <li class="skill-item">
+                        <h3>Flight</h3>
+                        <p>Able to soar through the skies at incredible speeds.</p>
+                    </li>
+                    <li class="skill-item">
+                        <h3>Heat Vision</h3>
+                        <p>Precision-focused energy beams for defense and rescue.</p>
+                    </li>
+                    <li class="skill-item">
+                        <h3>X-Ray Vision</h3>
+                        <p>See through walls and objects to locate those in need.</p>
+                    </li>
+                </ul>
             
-            </section>
-
-            <section id="publications">
-                <h2>Publications</h2>
-
             </section>
             
             <section id="contacts">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
 
+                <form>
+                    <!--Name Field-->
+                    <div class = "form-field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <!--Email Field-->
+                    <div class = "form-field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <!-- Subject Dropdown -->
+                    <div class = "form-field"> 
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support Request</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <!--Message Field-->
+                    <div class = "form-field">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <!--Submit Button-->
+                    <div class = "form-field">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
             </section>
             
         </main>
